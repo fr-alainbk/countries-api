@@ -1,0 +1,17 @@
+.country {
+  margin-right: 60px;
+  background-color: hsl(209, 23%, 22%);
+  /* width: 800px; */
+  margin-bottom: 60px;
+}
+
+.country__flag > img {
+  width: 260px;
+  object-fit: contain;
+  cursor: pointer;
+  /* height: 200px; */
+}
+
+.country__infos {
+  padding-left: 20px;
+}

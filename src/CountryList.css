@@ -1,0 +1,6 @@
+.countryList {
+  display: grid;
+  margin-left: 40px;
+  margin-right: 40px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}

@@ -1,0 +1,47 @@
+.subHeader {
+  margin-left: 40px;
+  margin-right: 90px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.subHeader__left {
+  background-color: hsl(209, 23%, 22%);
+  width: 350px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+
+.subHeader__left > input {
+  height: 40px;
+  background-color: hsl(209, 23%, 22%);
+  border: none;
+  color: hsl(0, 0%, 100%);
+  width: 350px;
+  margin-left: 15px;
+  outline-width: 0;
+}
+
+.subHeader__right {
+  background-color: hsl(209, 23%, 22%);
+  border-radius: 5px;
+  width: 190px;
+}
+
+.subHeader__right > select {
+  height: 40px;
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 100%);
+  width: 175px;
+  text-align-last: center;
+  border: none;
+  outline-width: 0;
+  cursor: pointer;
+}
+
+::placeholder {
+  color: hsl(0, 0%, 100%);
+}
