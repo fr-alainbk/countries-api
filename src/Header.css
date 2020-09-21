@@ -20,3 +20,28 @@
 .header__icon {
   margin-right: 10px;
 }
+
+@media screen and (max-width: 375px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    align-items: center;
+  }
+
+  .header__left {
+    margin-left: 20px;
+    margin-right: 25px;
+    font-size: 14px;
+  }
+
+  .header__right {
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .header__icon {
+    margin-right: 7px;
+  }
+}

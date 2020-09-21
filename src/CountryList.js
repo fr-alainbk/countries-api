@@ -3,20 +3,12 @@ import Country from "./Country";
 import axios from "axios";
 import "./CountryList.css";
 
-function CountryList({
-  selectedCountry,
-  setIsLoading,
-  isLoading,
-  selectedRegion,
-  setCountryClicked
-}) {
+function CountryList({ selectedCountry, setIsLoading, isLoading, selectedRegion }) {
   const [countries, setCountries] = useState([]);
-  // const [countryClicked, setCountryClicked] = useState("");
 
   useEffect(() => {
     const getCountries = async () => {
       const { data } = await axios.get("https://restcountries.eu/rest/v2/all");
-      console.log(data);
       setCountries(data);
     };
 
@@ -33,7 +25,6 @@ function CountryList({
         const { data } = await axios.get(
           `https://restcountries.eu/rest/v2/name/${selectedCountry}`
         );
-        // console.log(data);
 
         setCountries(data);
         setIsLoading(false);
@@ -54,7 +45,6 @@ function CountryList({
         const { data } = await axios.get(
           `https://restcountries.eu/rest/v2/region/${selectedRegion}`
         );
-        // console.log(data);
 
         setCountries(data);
         setIsLoading(false);

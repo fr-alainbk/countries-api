@@ -45,3 +45,58 @@
 ::placeholder {
   color: hsl(0, 0%, 100%);
 }
+
+@media screen and (max-width: 375px) {
+  .subHeader {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+
+  .subHeader__left {
+    background-color: hsl(209, 23%, 22%);
+    width: auto;
+    display: flex;
+    align-items: center;
+    padding-left: 1px;
+    border-radius: 5px;
+  }
+
+  .subHeader__icon {
+    margin-left: 10px;
+  }
+
+  .subHeader__left > input {
+    height: 40px;
+    background-color: hsl(209, 23%, 22%);
+    border: none;
+    color: hsl(0, 0%, 100%);
+    width: auto;
+    margin-left: 10px;
+    outline-width: 0;
+    margin-bottom: 5px;
+    padding-top: 5px;
+  }
+
+  .subHeader__right {
+    background-color: hsl(209, 23%, 22%);
+    border-radius: 5px;
+    width: 160px;
+    margin-top: 20px;
+    padding-left: 10px;
+  }
+
+  .subHeader__right > select {
+    height: 40px;
+    background-color: hsl(209, 23%, 22%);
+    color: hsl(0, 0%, 100%);
+    width: auto;
+    text-align-last: center;
+    border: none;
+    outline-width: 0;
+    cursor: pointer;
+  }
+}

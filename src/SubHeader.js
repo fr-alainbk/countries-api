@@ -3,7 +3,6 @@ import "./SubHeader.css";
 
 function SubHeader({ setChoice, setIsLoading, setRegion, region }) {
   const [country, setCountry] = useState("");
-  // const [region, setRegion] = useState("");
 
   const onCountryChange = (e) => {
     setCountry(e.target.value);
@@ -14,11 +13,8 @@ function SubHeader({ setChoice, setIsLoading, setRegion, region }) {
     console.log(region);
   };
 
-  // console.log(country);
-
   const handleKeyPress = (e) => {
     if (e.key === "Enter") {
-      // console.log(">>>", country);
       setChoice(country);
       setIsLoading(true);
     }
@@ -27,7 +23,7 @@ function SubHeader({ setChoice, setIsLoading, setRegion, region }) {
   return (
     <div className="subHeader">
       <div className="subHeader__left">
-        <i className="fas fa-search"></i>
+        <i className="fas fa-search subHeader__icon"></i>
         <input
           onChange={onCountryChange}
           onKeyPress={(e) => handleKeyPress(e)}

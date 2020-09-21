@@ -4,3 +4,10 @@
   margin-right: 40px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+
+@media screen and (max-width: 375px) {
+  .countryList {
+    display: flex;
+    flex-direction: column;
+  }
+}

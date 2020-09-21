@@ -9,7 +9,7 @@ function Header() {
       </div>
       <div className="header__right">
         <i className="header__icon fas fa-moon"></i>
-        <p className="header__mode">Dark Mode</p>
+        <p className="header__mode">DarkMode</p>
       </div>
     </div>
   );
