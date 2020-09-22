@@ -30,9 +30,11 @@ function SubHeader({ setChoice, setIsLoading, setRegion, region }) {
           value={country}
           type="text"
           placeholder="Search for a country..."
+          name="country-search"
         />
       </div>
       <div className="subHeader__right">
+        <label htmlFor="regions"></label>
         <select
           onChange={(e) => onRegionChange(e)}
           value={region}

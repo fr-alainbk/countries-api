@@ -20,7 +20,7 @@ function Country({ name, population, region, capital, flag }) {
     history.push("/details");
     dispatch({
       type: "CLICK_COUNTRY",
-      countryClicked: e.target.name
+      countryClicked: e.target.id
     });
   };
 
@@ -34,7 +34,7 @@ function Country({ name, population, region, capital, flag }) {
       >
         <Link to="/details">
           <div onClick={(e) => handleClick(e)} className="country__flag">
-            <img src={flag} alt="" name={name} />
+            <img src={flag} alt="" id={name} />
           </div>
         </Link>
 
